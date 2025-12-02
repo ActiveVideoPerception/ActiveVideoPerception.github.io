@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Active Video Perception: Iterative Evidence Seeking for Agentic Long Video Understanding">
+  <meta name="keywords" content="long video understanding, agentic video understanding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Active Video Perception: Iterative Evidence Seeking for Agentic Long Video Understanding</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./prj_static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+</head>
+
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-3 publication-title">
+            Active Video Perception: Iterative Evidence Seeking <br>
+            for Agentic Long Video Understanding</h1>
+<div class="is-size-5 publication-authors">
+<!-- First row -->
+<div class="author-row">
+  <span class="author-block"><a href="https://ziyangw2000.github.io/">Ziyang Wang<sup>1,2*</sup></a></span>&nbsp;&nbsp;&nbsp;
+  <span class="author-block"><a href="https://sites.google.com/view/hongluzhou/">Honglu Zhou<sup>1</sup></a></span>&nbsp;&nbsp;&nbsp;
+  <span class="author-block"><a href="https://wang-sj16.github.io/">Shijie Wang<sup>1</sup></a></span>&nbsp;&nbsp;&nbsp;
+  <span class="author-block"><a href="https://scholar.google.com/citations?user=MuUhwi0AAAAJ&hl=en">Junnan Li<sup>1</sup></a></span>&nbsp;&nbsp;&nbsp;
+  <span class="author-block"><a href="http://cmxiong.com/">Caiming Xiong<sup>1</sup></a></span>
+</div>
+
+<!-- Second row -->
+<div class="author-row">
+  <span class="author-block"><a href="https://www.salesforce.com/blog/author/silvio-savarese/">Silvio Savarese<sup>1</sup></a></span>&nbsp;&nbsp;&nbsp;
+  <span class="author-block"><a href="https://www.cs.unc.edu/~mbansal/">Mohit Bansal<sup>2</sup></a></span>&nbsp;&nbsp;&nbsp;
+  <span class="author-block"><a href="https://scholar.google.com/citations?user=vcw0TJIAAAAJ&hl=en">Michael S. Ryoo<sup>1</sup></a></span>&nbsp;&nbsp;&nbsp;
+  <span class="author-block"><a href="https://www.niebles.net/">Juan Carlos Niebles<sup>1</sup></a></span>
+</div>
+
+<!-- Affiliations -->
+<div class="is-size-5 publication-authors">
+  <span class="author-block"><sup>1</sup>Salesforce AI Research</span>
+</div>
+<div class="is-size-5 publication-authors">
+  <span class="author-block"><sup>2</sup>University of North Carolina at Chapel Hill</span>
+</div>
+
+<!-- Notes -->
+<div class="is-size-5 publication-authors">
+  <span class="author-block">*: Work done during internship at Salesforce</span>
+</div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2405.19209/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Ziyang412/AVP"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+            </div>
+
+        </div>      
+      </div>
+    </div>  
+    <section class="hero is-small">
+      <div class="body">
+        <div class="container">
+          <center>
+            <img src="./images/teaser.png" width="100%">
+          </center>
+          <div class="content has-text-justified" style="margin: auto; width: 100%;">
+              <b>Motivation of Active Video Perception</b>.
+              Prior methods follow a <em>passive</em> perception paradigm that leverages
+              query-agnostic captioners to perceive video information, leading to low
+              efficiency and imprecise visual grounding. Instead, our model <strong>AVP</strong>
+              <em>actively</em> perceives query-relevant content by treating the long video
+              as an interactive environment to be explored in a goal-directed manner.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Long video understanding (LVU) is challenging because answering real-world queries often depends on sparse, temporally dispersed cues buried in hours of mostly redundant and irrelevant content. While agentic pipelines improve video reasoning capabilities, prevailing frameworks rely on a query-agnostic captioner to perceive video information, which wastes computation on irrelevant content and blurs fine-grained temporal and spatial information. Motivated by active perception theory, we argue that LVU agents should actively decide what, when, and where to observe, and continuously assess whether the current observation is sufficient to answer the query. We present <strong>Active Video Perception (AVP)</strong>, an evidence-seeking framework that treats the video as an interactive environment and acquires compact, query-relevant evidence directly from pixels. AVP runs an iterative plan-observe-reflect process with MLLM agents: a planner proposes targeted video interactions, an observer executes them to extract time-stamped evidence, and a reflector evaluates the sufficiency of the evidence, either halting with an answer or triggering further observation. This closed-loop design steers computation toward informative segments, enables revisiting ambiguous moments, and adaptively allocates computational budget on long, complex videos. Across five long video understanding benchmarks, AVP achieves the highest performance with significant improvements, outperforming the best agentic method by <strong>5.7%</strong> in average accuracy while requiring only <strong>18.4%</strong> inference time and <strong>12.4%</strong> input tokens. We provide the code in the supplementary material.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<br>
+<br>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+    <h2 class="title is-3">Method</h2>
+
+      <center><img src="./images/method.png" alt="Teaser" width="100%"></center>
+
+      <div class="content has-text-justified">
+        <b>Framework of Active Video Perception (AVP).</b> 
+          AVP operates through an iterative plan-observe-reflect process with MLLM agents. 
+          At each round, the planner decides what, where, and how to interact with the video; 
+          the observer executes the plan to extract structured, query-relevant evidence;
+          and the reflector evaluates the evidence to determine whether another round is needed.
+          This closed-loop design steers computation toward informative segments, enables revisiting ambiguous moments, and adaptively allocates computational budget on long, complex videos.
+      </div>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+<br>
+<br>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+    <h2 class="title is-3">Results</h2>
+
+    </div>
+  </div>
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <center><img src="./images/table_1.png" alt="Teaser" width="100%"></center>
+        <div class="content has-text-justified">
+          Comparison with general-purpose MLLMs, video-specific MLLMs, and agentic video frameworks 
+          on five long video understanding benchmarks (MINERVA, LVBench, MLVU, Video-MME, LongVideoBench). 
+          We <strong>bold</strong> the best and <u>underline</u> the second-best result in each column. 
+          Results show that <strong>AVP</strong> consistently achieves the best performance across all datasets 
+          and baselines, delivering significant improvements over its backbone model 
+          (highlighted in blue) on every benchmark.
+  </div>
+  </div>
+  </div>
+
+
+  <!-- <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Abalation Study</h2>
+
+    <center><img src="./images/ablation.png" alt="Teaser" width="100%"></center>
+    <center><img src="./images/ablation2.png" alt="Teaser" width="100%"></center>
+
+    <div class="content has-text-justified">
+      we provide a detailed analysis of our VideoTree framework. All quantitative analyses are conducted on the validation subset of the EgoSchema dataset. First, we analyze the tradeoff between efficiency and effectiveness, comparing VideoTree to the LLoVi baseline.
+      Here we show that our method has better efficiency and performance across all settings. We then verify the effectiveness of the query-adaptive hierarchical video representation by comparing against different alternative representations. Finally, we visualize the output trees from VideoTree and show the clusters VideoTree chooses to expand, qualitatively supporting its quantitative gains. </div>
+  </div>
+  </div>
+ -->
+
+  </div>
+</section>
+
+<br>
+<br>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+    <h2 class="title is-3">Qualitative Analysis</h2>
+
+<center><img src="./images/vis.png" alt="Teaser" width="100%"></center>
+<!-- <center><img src="./images/vis2.png" alt="Teaser" width="100%"></center> -->
+      <div class="content has-text-justified">
+        <p>
+          <strong>Qualitative example of AVP.</strong>
+          Given a multiple-choice query about the Tombstone monument's first on-screen appearance, 
+          Round&nbsp;1 performs a coarse scan of the entire video (0.5&nbsp;FPS, low resolution) 
+          and identifies a candidate interval [1:00-1:10], but the <span class="sc">Reflector</span> 
+          judges the evidence insufficient. In Round&nbsp;2, the system re-plans a targeted pass 
+          over this window (2&nbsp;FPS, medium resolution), enabling the 
+          <span class="sc">Observer</span> to localize the monument in the upper-left background and 
+          allowing the <span class="sc">Reflector</span> to confidently select the correct answer 
+          (option&nbsp;D) and halt.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{wang2025avp,
+  author    = {Ziyang Wang and Honglu Zhou and Shijie Wang and Junnan Li and Caiming Xiong and Silvio Savarese and Mohit Bansal and Michael S. Ryoo and Juan Carlos Niebles},
+  title     = {Active Video Perception: Iterative Evidence Seeking for Agentic Long Video Understanding},
+  journal   = {arxiv},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p style="text-align:right;font-size:small;">
+          <a href="https://github.com/nerfies/nerfies.github.io">
+            This guy makes a nice webpage.
+          </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
