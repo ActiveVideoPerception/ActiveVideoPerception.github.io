@@ -100,44 +100,32 @@
     </div>
   </section>
   
-  <!-- Teaser section as a separate hero if you want -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <center>
-          <img src="./images/teaser.png" style="max-width: 70%; height: auto;">
-        </center>
-        <div class="content has-text-justified" style="margin: auto; width: 100%;">
-          <b>Motivation of Active Video Perception</b>.
-          Prior methods follow a <em>passive</em> perception paradigm that leverages
-          query-agnostic captioners to perceive video information, leading to low
-          efficiency and imprecise visual grounding. Instead, our model <strong>AVP</strong>
-          <em>actively</em> perceives query-relevant content by treating the long video
-          as an interactive environment to be explored in a goal-directed manner.
+
+  <br>
+  <br>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <center>
+            <img src="./images/teaser.png" style="max-width: 70%; height: auto;">
+          </center>
+          <div class="content has-text-justified" style="margin: auto; width: 100%;">
+            <b>Motivation of Active Video Perception</b>.
+            Prior methods follow a <em>passive</em> perception paradigm that leverages
+            query-agnostic captioners to perceive video information, leading to low
+            efficiency and imprecise visual grounding. Instead, our model <strong>AVP</strong>
+            <em>actively</em> perceives query-relevant content by treating the long video
+            as an interactive environment to be explored in a goal-directed manner.
+          </div>
         </div>
       </div>
+  
     </div>
   </section>
-
-  <br>
-  <br>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-          Long video understanding (LVU) is challenging because answering real-world queries often depends on sparse, temporally dispersed cues buried in hours of mostly redundant and irrelevant content. While agentic pipelines improve video reasoning capabilities, prevailing frameworks rely on a query-agnostic captioner to perceive video information, which wastes computation on irrelevant content and blurs fine-grained temporal and spatial information. Motivated by active perception theory, we argue that LVU agents should actively decide what, when, and where to observe, and continuously assess whether the current observation is sufficient to answer the query. We present <strong>Active Video Perception (AVP)</strong>, an evidence-seeking framework that treats the video as an interactive environment and acquires compact, query-relevant evidence directly from pixels. AVP runs an iterative plan-observe-reflect process with MLLM agents: a planner proposes targeted video interactions, an observer executes them to extract time-stamped evidence, and a reflector evaluates the sufficiency of the evidence, either halting with an answer or triggering further observation. This closed-loop design steers computation toward informative segments, enables revisiting ambiguous moments, and adaptively allocates computational budget on long, complex videos. Across five long video understanding benchmarks, AVP achieves the highest performance with significant improvements, outperforming the best agentic method by <strong>5.7%</strong> in average accuracy while requiring only <strong>18.4%</strong> inference time and <strong>12.4%</strong> input tokens. We provide the code in the supplementary material.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 <br>
 <br>
